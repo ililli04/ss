@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  background: #1D1E22;
+  font-size: 16px;
+  font-family: "Century Schoolbook", serif;
+}
+.container {
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  padding: 0 0.05em;
+  margin: 0.025em;
+  height:25vw;
+  font-size: 25vw;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.7s linear;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+  background: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+}
+.right {
+  background: #000;
+  color: #fff;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+.rflip {
+  transform: rotateY(0deg);
+}
